@@ -11,8 +11,16 @@
 }
 
 .container {
-	margin-top: 5vh;
 }
+
+#hvem-er-vi {
+	padding-top: 10vh;
+}
+
+#om-oss {
+	padding-top: 10vh;
+}
+
 
  img {
  position: relative;
@@ -67,7 +75,7 @@ body {
 .text {
 	width: 60%;
 	margin: auto;
-	margin-top: 5vh;
+	
 }
 
 body {
