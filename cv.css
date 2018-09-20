@@ -10,17 +10,39 @@
 	
 }
 
+.navbar-brand {
+	transition: opacity 0.5s;
+}
+
+.navbar-brand:hover {
+	opacity:0.5;
+}
+
 .container {
 }
 
 #hvem-er-vi {
-	padding-top: 10vh;
+	padding-top: 3vh;
 }
 
 #om-oss {
-	padding-top: 10vh;
+	padding-top: 5vh;
+	width: 70%
 }
 
+#left-table{
+	float:left;
+}
+
+#right-table{
+	float:left;
+}
+
+ul {
+
+	padding-top: 1vh;
+
+}
 
  img {
  position: relative;
@@ -60,20 +82,36 @@ a.navbar-brand {
 #banner-text {
 	text-align: center;
     position: relative;
-    top: 30%;
+    display:inline-block;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
 }
 
+#h1-banner {
+	font-size: 100px;
+	
+}
 
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	transition: opacity 1s ease-out;
+}
+
+h1:hover {
+
+	opacity: 0.2;
+
+}
 
 body {
 	padding-top:60px;
 }
 
 .text {
-	width: 60%;
+	width: 57%;
 	margin: auto;
 	
 }
@@ -86,15 +124,12 @@ body {
 .hero-image {
   background-image: url("images/alex-machado-435966-unsplash.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 55vh; /* You must set a specified height */
+  height: 40vh; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-h1 {
-	font-size: 40;
-}
 
 
 
