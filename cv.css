@@ -18,31 +18,34 @@
 	opacity:0.5;
 }
 
-.container {
+.hero-image {
+  background-image: url("images/alex-machado-435966-unsplash.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 40vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #hvem-er-vi {
+	
 	padding-top: 3vh;
 }
 
 #om-oss {
 	padding-top: 5vh;
-	width: 70%
+	width: 70%;
+	
 }
 
-#left-table{
-	float:left;
-}
 
-#right-table{
-	float:left;
-}
 
 ul {
 
 	padding-top: 1vh;
 
 }
+
 
  img {
  position: relative;
@@ -64,20 +67,9 @@ a.navbar-brand {
 	background-color: #FFFFFF;
 }
 
-.navbar-dark
-	.navbar-nav
-		.nav-link {
-			color: #e3e8ef;
-			font-weight: 600;
-		}
 
-#banner {
-	background: black;
-	width: 100%;
-	height:25vh;
-	display: inline-block;
-	
-}
+
+
 
 #banner-text {
 	text-align: center;
@@ -94,9 +86,14 @@ a.navbar-brand {
 	
 }
 
+.container {
+	padding-top: 10vh;
+}
+
 h1 {
 	font-size: 40px;
 	font-weight: 700;
+	opacity: 0.8;
 	transition: opacity 1s ease-out;
 }
 
@@ -113,6 +110,7 @@ body {
 .text {
 	width: 57%;
 	margin: auto;
+	padding-top: 3vh;
 	
 }
 
@@ -121,14 +119,32 @@ body {
 	font-weight: 500;
 }
 
-.hero-image {
-  background-image: url("images/alex-machado-435966-unsplash.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 40vh; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+
+#footer-div{
+	text-align: center;
+	padding-top: 10vh;
+	margin: auto;
+	width: 100%;
+
+
 }
+
+footer a {
+	color:black;
+	transition: opacity 0.5s;
+}
+
+footer a:hover {
+	color:black;
+	opacity: 0.5;
+}
+
+footer p {
+	padding-top: 2vh;
+}
+
+
+
 
 
 
