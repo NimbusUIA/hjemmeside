@@ -19,9 +19,10 @@
 }
 
 .hero-image {
+	padding-top: 15vh;
   background-image: url("images/alex-machado-435966-unsplash.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 40vh; /* You must set a specified height */
+
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -60,7 +61,7 @@ a.navbar-brand {
 }
 
 #navbarsExampleDefault {
-	max-width: 1200px;
+	max-width: 70%;
 }
 
 .bg-light {
