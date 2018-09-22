@@ -28,6 +28,10 @@ ul {
 
 }
 
+hr {
+	border-top: 2px solid black;
+}
+
 
 .row {
 	padding-top: 3vh;
@@ -44,17 +48,21 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 
+
+}
+
+#nimbus-container {
 	background-image: url("https://source.unsplash.com/9AqIdzEc9pY"), url(images/chuttersnap-553852-unsplash.jpg); 
   	background-color: #cccccc; 
   	background-position: center; 
  	background-size: cover; 
  	background-repeat: no-repeat;
-}
+ 	height:100vh;
 
+}
 
 #footer-div{
 	text-align: center;
-	padding-top: 30vh;
 	margin: auto;
 	width: 100%;
 
