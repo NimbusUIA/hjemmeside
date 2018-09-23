@@ -1,34 +1,53 @@
-.grow {
-  padding: 5px 5px 5px 5px;
-  border-radius:10px;
-    height: 100%; 
-    width: 100%; 
-    margin: 5px 1% 5px 1%;   
-    transition:height 0.5s; 
-    -webkit-transition:height 0.5s; 
-    text-align: center;
-    overflow: hidden;
-
-}
-.grow:hover {
-    z-index: 99;
-    height: 5cm;
-    width: 5cm;
+.column {
+  float: left;
+  width: 14%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
-.invisible {
-    opacity: 0;
-    visibility: none;
-}
-
-#makevisible:hover {
-    opacity: 100;
+@media screen and (max-width: 650px) {
+  .column {
+    width: 20%;
+    display: block;
+  }
 }
 
 .container {
-    position: relative;
+  padding: 0 16px;
 }
 
-.container:hover {
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#img {
+    position: relative;
+    float: left;
+    width:  50px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
