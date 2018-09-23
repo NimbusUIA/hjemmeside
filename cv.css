@@ -17,6 +17,12 @@ body {
 	background-color: #0080B5
 
 }
+
+.img-thumbnail {
+	padding: 0;
+	border: 0 none;
+	height: 30vh;
+}
 #nimbus {
 	
 	padding-top: 23%;
@@ -32,12 +38,8 @@ body {
   	background-position: center; 
  	background-size: cover; 
  	background-repeat: no-repeat;
-
+ 	height:100vh;
  	color: black;
-
-}
-#om-oss{
-
 
 }
 
@@ -62,11 +64,11 @@ h1 {
 }
 
 h2 {
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 section {
-	height:100vh;
+
 	background-color: #0080B5;
 
 }
@@ -75,8 +77,17 @@ section {
 	text-align: center;
 	width:100%;
 	padding-top: 15vh;
-	position: absolute;
-	bottom: 0;
+
+}
+
+a{
+	color:white;
+}
+
+a:hover {
+	opacity: 0.5;
+	color:white;
+
 }
 
 footer a {
