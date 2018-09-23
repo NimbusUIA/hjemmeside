@@ -7,9 +7,7 @@
 }
 
 html {
-	height:;
 }
-
 
 
 body {
@@ -77,9 +75,8 @@ section {
 	text-align: center;
 	width:100%;
 	padding-top: 15vh;
-
-
-
+	position: absolute;
+	bottom: 0;
 }
 
 footer a {

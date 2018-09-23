@@ -1,0 +1,42 @@
+/*
+.column {
+  float: left;
+  width: 14%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 20%;
+    display: block;
+  }
+}
+*/
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#img {
+    position: relative;
+    float: left;
+    width:  auto;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
