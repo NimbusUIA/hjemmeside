@@ -12,5 +12,23 @@
 }
 .grow:hover {
     z-index: 99;
-    height: 3cm;
+    height: 5cm;
+    width: 5cm;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: none;
+}
+
+#makevisible:hover {
+    opacity: 100;
+}
+
+.container {
+    position: relative;
+}
+
+.container:hover {
+
 }
