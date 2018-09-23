@@ -1,36 +1,46 @@
-.navbar
-        {
-            border-bottom: 2px solid #eaedf2;
-            background-color: white;
-        }
-
-.nav-link {
-	color: #000000;
-	font-weight: 500;
-	
-}
-
 .navbar-brand {
-	transition: opacity 0.5s;
+	transition: opacity 0.3s;
 }
 
 .navbar-brand:hover {
 	opacity:0.5;
 }
 
-.hero-image {
-	padding-top: 15vh;
-  background-image: url("images/alex-machado-435966-unsplash.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+html {
+	height:;
 }
 
-#hvem-er-vi {
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	color:white;
+	background-color: #0080B5
+
+}
+#nimbus {
 	
-	padding-top: 3vh;
+	padding-top: 23%;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+				0px 8px 13px rgba(0,0,0,0.1),
+				0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#nimbus-container {
+	background-image: url("https://source.unsplash.com/9AqIdzEc9pY"), url(images/chuttersnap-553852-unsplash.jpg); 
+  	background-color: #cccccc; 
+  	background-position: center; 
+ 	background-size: cover; 
+ 	background-repeat: no-repeat;
+
+ 	color: black;
+
+}
+#om-oss{
+
+
 }
 
 ul {
@@ -39,80 +49,48 @@ ul {
 
 }
 
-a.navbar-brand {
-	margin-left: 15%;
-	color:	#000000;
-	font-weight: 500;
-}
-
-#navbarsExampleDefault {
-	max-width: 70%;
-}
-
-.bg-light {
-	background-color: #FFFFFF;
+hr {
+	border-top: 2px solid black;
 }
 
 
-#banner-text {
-	text-align: center;
-    position: relative;
-    display:inline-block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
-
-#h1-banner {
-	font-size: 100px;
-	
-}
-
-.container {
+.row {
 	padding-top: 3vh;
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 5em;
 	font-weight: 700;
-	opacity: 0.8;
-	transition: opacity 1s ease-out;
 }
 
-h1:hover {
-
-	opacity: 0.2;
-
+h2 {
+	padding-top: 50px;
 }
 
-body {
-	padding-top:60px;
+section {
+	height:100vh;
+	background-color: #0080B5;
+
 }
-
-
-body {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-}
-
 
 #footer-div{
 	text-align: center;
-	padding-top: 10vh;
-	margin: auto;
-	width: 100%;
+	width:100%;
+	padding-top: 15vh;
+
+
 
 }
 
 footer a {
 	color:black;
+	opacity: 0.8;
 	transition: opacity 0.5s;
 }
 
 footer a:hover {
 	color:black;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 footer p {

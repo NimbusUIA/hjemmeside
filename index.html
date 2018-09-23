@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="cv.css">
 
 	<!--- fonts ---> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<!--- fontawesome icons--->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -28,38 +28,48 @@
 <body>
 
 		<!--- Navigation bar	---->
-	 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+	 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
       <a class="navbar-brand" href="#top">Nimbus</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse order-3" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse order-3">
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-        		<a class="nav-link" href="medlemmer.html">Medlemmer</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#om-oss">Om oss</a>
+            </li>
+        	<li class="nav-item">
+        		<a class="nav-link" href="./medlemmer.html">Medlemmer</a>
         	</li>
         </ul>
       </div>
+      </div>
     </nav>
-			</ul>
-		</div>
-	</nav>
 
 
-    <!--- Banner	--->
-    <div class="hero-image">
-        <div id="banner-text">
-            <h1 id="h1-banner" >Nimbus</h1>
-            <p></p>
-        </div>   
+    <section id="nimbus-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="nimbus">
+                    <h1>Nimbus</h1>
+                    <h3>/ˈnɪmbəs/ a luminous cloud or a halo surrounding a supernatural being or a saint</h3>
+                    <hr>
+                    <a href="#om-oss"><button type="button" class="btn btn-dark btn-lg">Om oss</button></a>
+                <a href="./medlemmer.html"><button type="button" class="btn btn-dark btn-lg">Medlemmer</button></a>
+                </div>
+            </div>
+        </div>
     </div>
+    </section>
     
 
-
-    <div class=container>
+    <section>
+    <div id="om-oss" class=container>
     	<div class=row>
     	<div class="col-12">
-    		<h2>Hvem er vi?</h2>
+    		<h2>Om oss</h2>
     			<p>
     				Vi er en gruppe på 7 som studerer IT og informasjonssystemer ved Universitetet i Agder. Vi kommer fra ulike deler av landet, fra Nord til Sør. Siden skolestart i 2016 har vi jobbet sammen i forbindelse med gruppearbeid i ulike fag. Vi er en hardtarbeidende gjeng som tar en utfordring på strak arm. På fritiden er vi alle på samme bølgelengde sosialt og finner på ulike aktiviteter. 
     			</p>
@@ -67,13 +77,12 @@
 					Vi ønsker oss et variert og utfordrende prosjekt, hvor vi har muligheten til å vise vår kunnskap og tilegne oss nye erfaringer. I løpet av studietiden har vi fordypet oss i forskjellige emner. Noen av oss har hatt fokus på tekniske emner, mens andre har valgt teoretiske fag. Dette gjøre at vi kan belyse utfordringer i et prosjekt med forskjellige perspektiv og gi hverandre nye impulser. Krever prosjektet at vi lærer oss nye rammeverk eller programmeringsspråk gjør vi gjerne det, ettersom vi har et ønske om å oppnå enda bredere kompetanse.
     			</p>
 
-    		</row>
     		</div>
 		</div>
 	</div>
 
     
-    
+        
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
@@ -97,29 +106,33 @@
                         <li>Java</li>
                         <li>MySQL</li>
                         <li>PL/SQL</li>
-                        <li>Bootstrap</li>
                         <li>Spring-rammeverket</li>
                         <li>Python og Bash scripting</li>
                         <li>Golang</li>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>Bootstrap</li>
                         <li>Ei litta klype Javascript</li>
-
-                    </ul>
-                    
+                    </ul> 
                 </div>
             </div>           
         </div>
 
-
-    
-    <div id="footer-div">
+        <div id="footer-div">
         <footer>
-        	<a title="Nimbus Github" href="https://github.com/NimbusUIA">
-        		<i class="fab fa-github fa-3x" href="github.com"></i>
-       		</a>
-        	<p>Copyright © NimbusUIA 2018</p>
+            <a title="Nimbus Github" href="https://github.com/NimbusUIA">
+                <i class="fab fa-github fa-3x" href="github.com"></i>
+            </a>
+            <p>Copyright © NimbusUIA 2018</p>
         </footer>
     </div>
+    </section>
+
+      
+
+
+
+    
+
 </body>
 </html>

@@ -11,5 +11,6 @@
 
 }
 .grow:hover {
-    height: 90%;
+    z-index: 99;
+    height: 3cm;
 }
