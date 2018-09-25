@@ -114,15 +114,24 @@ footer p {
     padding: 0vh 0vh;
     background-color: #1993c3;
     border: 0px none;
-    opacity: 0.95;
-
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    opacity: 1;
+    filter: grayscale(0%);
 } 
+
+/* Sparer dette til vi eventuelt har profilsider
+
+/*.card img {
+	filter:grayscale(100%);
+	transition: 1s;
+}
+
+.card img:hover {
+	filter:grayscale(0%);
+}*/
 
 div.card div {
 	padding-left: 1vh;
