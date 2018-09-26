@@ -131,6 +131,12 @@ footer p {
     background-color: #006c9b;
 } 
 
+
+.greyscale{
+
+	transition: 1s;
+	filter: grayscale(100%);
+}
 /* Sparer dette til vi eventuelt har profilsider
 
 /*.card img {
