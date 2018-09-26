@@ -142,6 +142,7 @@ footer p {
 	filter:grayscale(0%);
 }*/
 
+
 div.card div {
 	padding-left: 1vh;
 	padding-bottom: 1vh;
@@ -161,9 +162,13 @@ div.card div h5 {
 	margin-top: 10vh;
 }
 
+.col-sm-5 {
+	margin-bottom: 2vh;
+}
+
 header {
 	margin: 5vh;
-	width: 40%;
+	width: 60%;
 	margin: auto;
 	background-color: #01597f;
 	padding-top: 3vh;
@@ -184,27 +189,34 @@ header h5 {
 
 }
 
+@media (max-width: 767px){
+	header{
+		width: 100%;
+	}
+}
 
-@media (max-width: 600px){ 
+
+@media (max-width: 575px){ 
 .img-thumbnail {
+
 	height: 60vh;
 	} 
 .card {
-	margin-bottom: 10%;
+	
+	
 	
 }
 
 
-#gruppa div .col-sm-12{
-	width: 70%;
-	left: 15%;
+#gruppa div .col-sm-6{
+	
+	width: 80%;
+	left: 10%;
+
+	
 }
 
-header {
-	width: 100%;
-}
 
-}
 
 
 
