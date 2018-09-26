@@ -154,25 +154,7 @@ div.card div h5 {
 }
 
 
-@media (max-width: 600px){ 
-.img-thumbnail {
-	height: 40vh;
 
-
-
-
-	} 
-.card {
-	margin-bottom: 10%;
-	
-}
-
-
-#gruppa div .col-sm-12{
-	width: 70%;
-	left: 15%;
-}
-}
 
 #kontaktinformasjon {
 	text-align: center;
@@ -199,6 +181,28 @@ header hr {
 
 header h5 {
 	padding:  3vh 0vh;
+
+}
+
+
+@media (max-width: 600px){ 
+.img-thumbnail {
+	height: 60vh;
+	} 
+.card {
+	margin-bottom: 10%;
+	
+}
+
+
+#gruppa div .col-sm-12{
+	width: 70%;
+	left: 15%;
+}
+
+header {
+	width: 100%;
+}
 
 }
 
