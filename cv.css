@@ -7,6 +7,13 @@
 }
 
 html {
+	box-sizing: border-box;
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
@@ -21,7 +28,7 @@ body {
 .img-thumbnail {
 	padding: 0;
 	border: 0 none;
-	height: 30vh;
+	
 }
 #nimbus {
 	
@@ -72,29 +79,13 @@ h2 {
 	padding-top: 70px;
 }
 
-section {
-
-	
-}
-
 #footer-div{
 	text-align: center;
 	width:100%;
-	padding-top: 15vh;
+	padding-top: 15%;
 
 }
 
-
-
-a{
-	color:white;
-}
-
-a:hover {
-	opacity: 0.5;
-	color:white;
-
-}
 
 footer a {
 	color:black;
@@ -124,29 +115,23 @@ footer p {
     border: 0px none;
     border-radius: 0.5rem;
 }
+.card p {
+	color: white;
+}
+.card a:hover{
+	text-decoration: none;
+}
 
-/* On mouse-over, add a deeper shadow */
+.card h5 {
+	color: white;
+}
+
+
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
     background-color: #006c9b;
 } 
-
-
-.greyscale{
-
-	transition: 1s;
-	filter: grayscale(100%);
-}
-/* Sparer dette til vi eventuelt har profilsider
-
-/*.card img {
-	filter:grayscale(100%);
-	transition: 1s;
-}
-
-.card img:hover {
-	filter:grayscale(0%);
-}*/
 
 
 div.card div {
@@ -154,22 +139,21 @@ div.card div {
 	padding-bottom: 1vh;
 }
 
+.title {
+	margin: auto;
+}
+
+
+
 div.card div h5 {
 	padding-top: 1vh;
 	font-size: 1.05rem;
 	font-weight: 700;
 }
 
-
-
-
 #kontaktinformasjon {
 	text-align: center;
 	margin-top: 10vh;
-}
-
-.col-sm-5 {
-	margin-bottom: 2vh;
 }
 
 header {
@@ -201,26 +185,126 @@ header h5 {
 	}
 }
 
-
-@media (max-width: 575px){ 
-.img-thumbnail {
-
-	height: 60vh;
-	} 
-.card {
-	
+.wrapper{
+	max-width: 70%;
+	margin: 100px auto;
+	height: 100%;
 	
 	
 }
 
-
-#gruppa div .col-sm-6{
-	
-	width: 80%;
-	left: 10%;
-
+.profile-grid .grid-profile-picture {
+	width: 33.33%;
+	float: left;
 	
 }
+
+.profile-grid:after {
+	display: table;
+	clear: both;
+	content: '';
+  }
+
+.profile-picture {
+	max-width: 100%;
+	height: auto;
+	border-radius: 2%;
+}
+
+.profile-grid .grid-profile-description {
+	width: 66.66%;
+	padding-left: 3%;
+	float: left;
+}
+
+.profile-grid .grid-profile-description h3 {
+	font-weight: 700;
+}
+
+.profile-grid .grid-profile-description p:first-of-type {
+	margin-bottom: 5%;
+}
+
+
+.profile-grid .grid-profile-description p:last-of-type {
+	margin-bottom: 10%;
+}
+
+.grid-profile-description a {
+	
+	color: white;
+}
+
+.grid-profile-description a:hover {
+	color: white;
+	
+}
+
+.grid-profile-description a button {
+	color: white;
+	border-radius: 5%;
+	border: 0 none;
+	background-color: #01597f;
+	transition: 0.5s ease;
+	letter-spacing: 1px;
+	padding: 8px 6px;
+	
+}
+
+.grid-profile-description a button:hover {
+	
+	background-color: #00488b;
+	cursor: pointer;
+}
+
+
+
+@media (max-width: 1200px) {
+
+	.wrapper {
+		max-width: 80%;
+		
+	}
+	.profile-grid .grid-profile-picture {
+		width: 40%;
+		
+	}
+
+	.profile-grid .grid-profile-description {
+		
+		width: 59.99%
+		
+	}
+
+	#footer-div{
+		padding-top: 30%;
+	}
+
+}
+
+@media (max-width: 700px) {
+
+	.wrapper {
+		max-width: 100%;
+		margin-top: 55px;
+	}
+	.profile-grid .grid-profile-picture {
+		width: 100%;
+		
+	}
+
+	.profile-grid .grid-profile-description {
+		padding: 2% 2%;
+		width: 100%
+		
+	}
+
+	#footer-div{
+		padding-top: 15%;
+	}
+
+}
+
 
 
 
