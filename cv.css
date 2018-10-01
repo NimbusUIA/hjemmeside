@@ -257,6 +257,17 @@ header h5 {
 	cursor: pointer;
 }
 
+.grid-profile-description h3{
+	margin-bottom: 0
+}
+
+.grid-profile-description hr {
+	border: 1px solid white;
+	width: 50%;
+	margin: 0;
+	margin-bottom: 1%;
+}
+
 
 
 @media (max-width: 1200px) {
