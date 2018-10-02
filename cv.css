@@ -79,6 +79,10 @@ h2 {
 	padding-top: 70px;
 }
 
+.col-12 h3 {
+	padding-top:3%;
+}
+
 #footer-div{
 	text-align: center;
 	width:100%;
