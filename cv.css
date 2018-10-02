@@ -222,7 +222,19 @@ header h5 {
 }
 
 .profile-grid .grid-profile-description p:first-of-type {
+	margin-bottom: 0;
+}
+
+.profile-grid .grid-profile-description #email {
 	margin-bottom: 5%;
+}
+
+.grid-profile-description .fa-mobile-alt {
+	margin-right: 1.7%;
+}
+
+.grid-profile-description .fa-envelope {
+	margin-right: 1%;
 }
 
 
@@ -234,6 +246,11 @@ header h5 {
 	
 	color: white;
 }
+
+.grid-profile-description span {
+	font-weight: 700;
+}
+
 
 .grid-profile-description a:hover {
 	color: white;
