@@ -1,0 +1,24 @@
+{
+  "name": "nimbus-uia",
+  "version": "1.0.0",
+  "description": "presentation website for bachelor project",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NimbusUIA/hjemmeside.git"
+  },
+  "author": "Vebjørn Nordby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NimbusUIA/hjemmeside/issues"
+  },
+  "homepage": "https://github.com/NimbusUIA/hjemmeside#readme"
+}
