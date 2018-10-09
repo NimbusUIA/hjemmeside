@@ -11,37 +11,33 @@ app.get("/", function(req, res){
     res.render("index")
 })
 
-app.get("/medlemmer/:medlem", function(req, res){
-    var medlem = req.params.medlem
-
-
-   
-        res.render(medlem)
-    
-})
-
-
-
-
-
-
-
-
-
-var catSchema = new mongoose.Schema({
-    name: String,
-    age: Number,
-    temperament: String
+var memberSchema = new mongoose.Schema({
+    firstName: String,
+    middleName: String,
+    lastName: String,
+    role: String,
+    about: [String]
 });
 
-var Cat = mongoose.model("Cat", catSchema);
+var Member = mongoose.model("member", memberSchema);
 
-
-var beb = Cat.create({
-    name: "Bubba",
-    age: 19,
-    temperament: "nice"
+app.get("/medlemmer/:medlem", function(req, res){
+       var fullName = (req.params.medlem).split("-");
+       var firstName = fullName[0];
+       
+      Member.findOne({firstName: firstName}, function(err, member){
+          if(err){
+              console.log(err)
+          }else {
+              console.log(member)
+              res.render("medlem.ejs", {member : member})
+          }
+      })
 })
+
+
+
+
 
 
 app.listen(process.env.PORT, process.env.IP, () => console.log("Server running at port " + process.env.PORT))

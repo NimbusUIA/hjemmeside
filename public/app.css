@@ -232,6 +232,11 @@ header h5 {
 
 .profile-grid .grid-profile-description h3 {
 	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.profile-grid .grid-profile-description h5 {
+	text-transform: capitalize;
 }
 
 .profile-grid .grid-profile-description p:first-of-type {
