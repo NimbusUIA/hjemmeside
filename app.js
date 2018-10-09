@@ -1,7 +1,7 @@
 var express = require("express")
 var app = express()
 var mongoose = require("mongoose");
-mongoose.connect(MONGODB_URI,  {useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB_URI,  {useNewUrlParser: true})
 
 
 app.use(express.static("public"));
