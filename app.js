@@ -1,6 +1,7 @@
 var express = require("express")
 var app = express()
 var mongoose = require("mongoose");
+mongoose.connect(MONGODB_URI,  {useNewUrlParser: true})
 
 
 app.use(express.static("public"));
@@ -42,7 +43,5 @@ var beb = Cat.create({
     temperament: "nice"
 })
 
-beb.then(function(){
-    console.log(beb)
-})
+
 app.listen(process.env.PORT, process.env.IP, () => console.log("Server running at port " + process.env.PORT))
