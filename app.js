@@ -1,5 +1,6 @@
 var express = require("express")
 var app = express()
+var mongoose = require("mongoose");
 
 
 app.use(express.static("public"));
@@ -19,4 +20,29 @@ app.get("/medlemmer/:medlem", function(req, res){
 })
 
 
+
+
+
+
+
+
+
+var catSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    temperament: String
+});
+
+var Cat = mongoose.model("Cat", catSchema);
+
+
+var beb = Cat.create({
+    name: "Bubba",
+    age: 19,
+    temperament: "nice"
+})
+
+beb.then(function(){
+    console.log(beb)
+})
 app.listen(process.env.PORT, process.env.IP, () => console.log("Server running at port " + process.env.PORT))
