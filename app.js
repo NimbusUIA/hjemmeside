@@ -9,13 +9,17 @@ app.get("/", function(req, res){
     res.render("index")
 })
 
+app.get("/index.html", function(req, res){
+  res.redirect("/")
+})
+
 app.get("/medlemmer/:medlem", function(req, res){
     var medlem = req.params.medlem
 
 
-   
+
         res.render(medlem)
-    
+
 })
 
 
