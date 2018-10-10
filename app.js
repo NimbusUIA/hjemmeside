@@ -11,6 +11,11 @@ app.get("/", function(req, res){
     res.render("index")
 })
 
+app.get("/index.html", function(req, res){
+  res.redirect("/")
+})
+
+
 var memberSchema = new mongoose.Schema({
     firstName: String,
     middleName: String,
@@ -34,7 +39,7 @@ app.get("/medlemmer/:medlem", function(req, res){
           if(err){
               console.log(err)
           }else {
-              res.render("medlem.ejs", {member : member})
+              res.render("medlem", {member : member})
           }
       })
 })
@@ -42,6 +47,5 @@ app.get("/medlemmer/:medlem", function(req, res){
 
 
 
-
-
 app.listen(process.env.PORT, process.env.IP, () => console.log("Server running at port " + process.env.PORT))
+
