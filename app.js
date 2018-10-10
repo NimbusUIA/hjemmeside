@@ -10,8 +10,8 @@ app.get("/", function(req, res){
 })
 
 app.get("/index.html", function(req, res){
-  res.render("index")
-}
+  res.redirect("/")
+})
 
 app.get("/medlemmer/:medlem", function(req, res){
     var medlem = req.params.medlem
