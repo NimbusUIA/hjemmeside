@@ -235,9 +235,6 @@ header h5 {
 	text-transform: capitalize;
 }
 
-.profile-grid .grid-profile-description h5 {
-	text-transform: capitalize;
-}
 
 .profile-grid .grid-profile-description p:first-of-type {
 	margin-bottom: 0;
