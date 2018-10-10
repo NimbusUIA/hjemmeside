@@ -15,11 +15,17 @@ var memberSchema = new mongoose.Schema({
     firstName: String,
     middleName: String,
     lastName: String,
+    email: String,
+    phone: String,
+    img: String,
     role: String,
+    linkedIn: String,
     about: [String]
 });
 
+
 var Member = mongoose.model("member", memberSchema);
+
 
 app.get("/medlemmer/:medlem", function(req, res){
        var fullName = (req.params.medlem).split("-");
@@ -29,7 +35,6 @@ app.get("/medlemmer/:medlem", function(req, res){
           if(err){
               console.log(err)
           }else {
-              console.log(member)
               res.render("medlem.ejs", {member : member})
           }
       })

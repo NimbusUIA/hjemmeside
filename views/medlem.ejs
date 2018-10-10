@@ -4,7 +4,7 @@
      <div class="wrapper">
                 <div class="profile-grid">
                     <div class="grid-profile-picture">
-                    <img class="profile-picture" src="/images/vebjornn.jpg"  alt="Vebjørn">
+                    <img class="profile-picture" src=<%=member.img%>  alt=<%= member.firstName%>>
                     </div>
                     <div class="grid-profile-description">
                         <h3>
@@ -12,14 +12,15 @@
                         </h3>
                         <hr>
                         <h5><%= member.role %></h5>
-                        <p><i class="fas fa-mobile-alt"></i>93247666</p>
-                        <p id="email"><i class="far fa-envelope"></i>vebjorn@nimbusuia.cloud</p>
+                        
+                        <p><i class="fas fa-mobile-alt"></i><%=member.phone%></p>
+                        <p id="email"><i class="far fa-envelope"></i><%= member.email %></p>
                         
                         <% member.about.forEach(function(about){%>
                             <p><%= about %></p>
                         <% }) %>
 
-                        <a href="https://www.linkedin.com/in/vebnor/" target="_blank"><button>LinkedIn</button></a>
+                        <a href= <%= member.linkedIn %> target="_blank"><button>LinkedIn</button></a>
                         
                 </div>
             </div>

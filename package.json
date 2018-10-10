@@ -4,6 +4,7 @@
   "description": "presentation website for bachelor project",
   "main": "app.js",
   "dependencies": {
+    "cloudinary": "^1.11.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mongoose": "^5.3.2"
