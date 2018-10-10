@@ -28,10 +28,9 @@ var Member = mongoose.model("member", memberSchema);
 
 
 app.get("/medlemmer/:medlem", function(req, res){
-       var fullName = (req.params.medlem).split("-");
-       var firstName = fullName[0];
+      var id = req.params.medlem
        
-      Member.findOne({firstName: firstName}, function(err, member){
+      Member.findOne({_id: id}, function(err, member){
           if(err){
               console.log(err)
           }else {
